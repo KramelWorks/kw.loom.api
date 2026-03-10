@@ -19,7 +19,7 @@
   "keywords": ["cms","content","loom"],
   "author": "Kramelworks[T]",
   "license": "MIT",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/KramelWorks/kw.loom.api/issues"
   },

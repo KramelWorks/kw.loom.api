@@ -1,0 +1,46 @@
+name: Feature request
+description: Sugerir nova funcionalidade
+title: "[FEATURE] "
+labels: ["enhancement"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sugira uma melhoria ou nova funcionalidade.
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema
+      description: Qual problema você quer resolver?
+      placeholder: Descreva o problema
+    validations:
+      required: true
+
+  - type: textarea
+    id: solucao
+    attributes:
+      label: Solução proposta
+      placeholder: Como você imagina a solução?
+
+  - type: dropdown
+    id: prioridade
+    attributes:
+      label: Prioridade
+      options:
+        - Baixa
+        - Média
+        - Alta
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: impacto
+    attributes:
+      label: Impacto esperado
+      options:
+        - label: Melhoria de performance
+        - label: Nova funcionalidade
+        - label: Melhoria de UX
+        - label: Refatoração técnica

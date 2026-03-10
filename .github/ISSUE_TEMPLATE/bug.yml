@@ -1,0 +1,70 @@
+name: Bug report
+description: Reportar um erro no sistema
+title: "[BUG] "
+labels: ["bug"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por reportar um bug! Preencha as informações abaixo.
+
+  - type: dropdown
+    id: ambiente
+    attributes:
+      label: Ambiente
+      description: Onde o problema ocorreu?
+      options:
+        - Desenvolvimento
+        - Homologação
+        - Produção
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severidade
+    attributes:
+      label: Severidade
+      options:
+        - Baixa
+        - Média
+        - Alta
+        - Crítica
+    validations:
+      required: true
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição do problema
+      description: Explique o que aconteceu
+      placeholder: Descreva o bug
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduzir
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Ir para...
+        2. Clicar em...
+        3. O erro aparece
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+      placeholder: O que deveria acontecer?
+
+  - type: checkboxes
+    id: termos
+    attributes:
+      label: Confirmações
+      options:
+        - label: Verifiquei que não existe outra issue igual
+          required: true
+        - label: Este bug ocorre de forma consistente

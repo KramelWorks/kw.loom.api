@@ -1,18 +1,24 @@
 {
   "name": "kw.loom.api",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Kramelworks' simple content management system (CMS) for internal and educational use.",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
+    "dev":"tsx watch src/main.ts",
+    "build":"tsc",
+    "start":"node dist/main.js",
+    "prisma:migrate":"prisma migrate dev",
+    "prisma:generate":"prisma generate",
+    "prisma:studio":"prisma studio",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KramelWorks/kw.loom.api.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["cms","content","loom"],
+  "author": "Kramelworks[T]",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/KramelWorks/kw.loom.api/issues"

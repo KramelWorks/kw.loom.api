@@ -1,5 +1,5 @@
 export class AppResult<T>{
-    private readonly _statusCode:Number;
+    private readonly _statusCode:number;
     private readonly _success:boolean;
     private readonly _data:T | undefined;
     private readonly _message?:string;
@@ -9,7 +9,7 @@ export class AppResult<T>{
     public get data(){return this._data};
     public get message(){return this._message};
 
-    private constructor(statusCode:Number,success:boolean,data?:T,message?:string) {
+    private constructor(statusCode:number,success:boolean,data?:T,message?:string) {
         this._statusCode=statusCode;
         this._success=success;
         this._data=data;

@@ -4,5 +4,4 @@ function bootstrap(){
     startHttpServer();
 }
 
-
 bootstrap();
